@@ -1,0 +1,22 @@
+<h2>Playing with Null, Undefined, and Vehicles in JS</h2>
+<div class="step-text">
+<p>What will be the output of the following JavaScript code snippet?</p><pre><code class="language-javascript">let car;
+let bike = null;
+
+function checkVehicles(vehicle) {
+  if (vehicle === undefined) {
+    return `Vehicle: ${vehicle}`;
+  } else if (vehicle === null) {
+    return `Vehicle: ${vehicle}`;
+  }
+
+  vehicle.type = 'Sedan';
+  return `Vehicle is a ${vehicle.type}`;
+}
+
+let vehicle = { type: "Hatchback" };
+
+console.log(checkVehicles(car));
+console.log(checkVehicles(bike));
+console.log(checkVehicles(vehicle));</code></pre>
+</div>
